@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AI Fun Page</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style1.css">
+    <style>
+      body {
+        margin-top: 50px; /* Add top margin to bring content down */
+      }
+
+      .loading-bar {
+        margin: 20px auto;
+        width: 80%;
+        background-color: #ddd;
+      }
+
+      .loading-bar-fill {
+        width: 99%;
+        height: 30px;
+        background-color: #4CAF50;
+        text-align: center;
+        line-height: 30px;
+        color: white;
+        font-weight: bold;
+      }
+
+      .joke-box {
+        margin-top: 40px;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .prompt-box {
+        margin-top: 40px;
+        padding: 20px;
+        background-color: #e8e8e8;
+        border: 1px solid #bbb;
+        border-radius: 5px;
+      }
+
+      .generate-btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+    </style>
+    <script>
+      function generateJoke() {
+        const jokes = [
+          "Why don't scientists trust atoms? Because they make up everything!",
+          "Why did the scarecrow win an award? Because he was outstanding in his field!",
+          "Why don't skeletons fight each other? They don't have the guts.",
+          "I'm reading a book on anti-gravity. It's impossible to put down!",
+          "Why did the bicycle fall over? Because it was two-tired!",
+          "Why can't you give Elsa a balloon? Because she will let it go!",
+          "What do you call fake spaghetti? An impasta!",
+          "Why don't oysters donate to charity? Because they are shellfish!",
+          "What do you call cheese that isn't yours? Nacho cheese!",
+          "Why did the golfer bring two pairs of pants? In case he got a hole in one!",
+          "Why was the math book sad? It had too many problems.",
+          "Why don't some couples go to the gym? Because some relationships don't work out.",
+          "How does a penguin build its house? Igloos it together!",
+          "Why did the coffee file a police report? It got mugged.",
+          "What do you get if you cross a snowman and a vampire? Frostbite.",
+          "What do you call a bear with no teeth? A gummy bear!",
+          "Why don’t skeletons ever go trick or treating? Because they have no-body to go with.",
+          "Why don't seagulls fly over the bay? Because then they'd be bagels!",
+          "What do you call a fish with no eyes? Fsh!",
+          "Why was the broom late? It swept in.",
+          "How does a vampire start a letter? Tomb it may concern...",
+          "Why was the computer cold? It left its Windows open.",
+          "Why was the stadium so hot? All the fans left!",
+          "What do you call a can opener that doesn’t work? A can't opener!",
+          "Why do cows wear bells? Because their horns don't work.",
+          "What do you call a sleeping bull? A bulldozer.",
+          "Why are ghosts bad at lying? Because you can see right through them!",
+          "What did one wall say to the other? I'll meet you at the corner!",
+          "Why can't you hear a pterodactyl go to the bathroom? Because the 'P' is silent!",
+          "Why did the tomato turn red? Because it saw the salad dressing!",
+          "Why don't skeletons fight each other? They don't have the guts.",
+          "What do you call an alligator in a vest? An investigator!",
+          "Why don't elephants use computers? Because they are afraid of the mouse!",
+          "What do you call a cow with no legs? Ground beef.",
+          "Why did the cookie go to the hospital? Because it felt crumby.",
+          "Why was the big cat disqualified from the race? Because it was a cheetah.",
+          "How do you make a tissue dance? You put a little boogie in it!",
+          "Why did the music teacher go to jail? Because she got caught with the notes!",
+          "What kind of shoes do ninjas wear? Sneakers!",
+          "Why did the chicken join a band? Because it had the drumsticks!",
+          "What do you call a snowman with a six-pack? An abdominal snowman!",
+          "What do you call a pony with a sore throat? A little hoarse.",
+          "Why did the banana go to the doctor? Because it wasn't peeling well.",
+          "Why did the bicycle stand up by itself? Because it was two-tired!",
+          "What did the ocean say to the shore? Nothing, it just waved.",
+          "Why don't bananas snore? Because they don't want to wake up the rest of the bunch!",
+          "Why did the scarecrow win an award? Because he was outstanding in his field!",
+          "Why was the math book sad? It had too many problems."
+        ];
+        const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
+        document.getElementById('joke').textContent = randomJoke;
+      }
+    </script>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+
+    <h1>Welcome to the AI Fun Page!</h1>
+
+    <div class="loading-bar">
+      <div class="loading-bar-fill">Downloading virus... 99%</div>
+    </div>
+
+    <div class="joke-box">
+      <h2>Need a Laugh? Here's a Joke for You:</h2>
+      <p id="joke">Click the button below to generate a random joke.</p>
+      <button class="generate-btn" onclick="generateJoke()">Generate Joke</button>
+    </div>
+
+    <div class="prompt-box">
+      <h2>AI-Generated Page Prompt:</h2>
+      <textarea rows="5" cols="50">
+Create a fun webpage that includes a random joke generator with 50 jokes and a loading bar that humorously says "Downloading virus" but stays at 99%. The page should be simple, clean, and use JavaScript for the joke generator while ensuring style consistency with the main website.
+      </textarea>
+    </div>
+  </body>
+</html>

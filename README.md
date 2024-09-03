@@ -1,2 +1,2 @@
-# CSCE_331_Assad
-nsadklalndla
+# personal-website-Xachariah
+Howdy! My name is Zach Assad
